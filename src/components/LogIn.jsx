@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import { Link } from 'react-router-dom';
 import Error from './Error';
 
 const LogIn = () => {
@@ -38,10 +39,11 @@ const LogIn = () => {
                     class="text-blue-700 text-sm"
                 >Crear cuenta
                 </button>
-                <button
+                {/* <button
                     class="text-blue-700 text-sm"
                 >¿Olvidó la Contraseña?
-                </button>
+                </button> */}
+                <Link to="/RegPacientes" class="text-blue-700 text-sm">¿Olvidó la Contraseña?</Link>
             </div>
             <div class="flex justify-center">
                 <input
